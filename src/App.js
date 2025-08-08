@@ -80,8 +80,8 @@ const RestaurantCard = (props) => {
           <h4>{deliveryTime} mins</h4>
         </div>
         <p className="cousine">
-          {cuisines.join(", ").slice(0, 30)}
-          {cuisines.join(", ").length > 30 ? "..." : ""}
+          {cuisines.join(", ")}
+          
         </p>
         <p className="location">{areaName}</p>
       </div>
@@ -475,17 +475,17 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="footer">
-      Created By <span>❤️</span>
+      Created By <span></span>
       <a
-        href="https://www.linkedin.com/in/bharat2044/"
+        href="https://www.linkedin.com/in/kunj-patel-01660203kp/"
         target="_blank"
         rel="noreferrer"
       >
-        Bharat Kumar
+        Kunj
       </a>
       <span>&copy; {year} </span>
       <strong>
-        Tasty <span>Trails</span>
+        FOOD ORDERING APP 
       </strong>
     </div>
   );
