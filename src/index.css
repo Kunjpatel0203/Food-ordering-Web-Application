@@ -49,6 +49,8 @@ body {
   z-index: 1000;
 }
 
+
+
 .logo {
   width: 60px;
   height: 60px;
@@ -77,9 +79,9 @@ body {
 .body {
   width: 100%;
   display: flex;
+  margin-top: 120px;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
 }
 
 .search-box {
@@ -107,7 +109,7 @@ body {
 .search-icon {
   color: #828080;
   font-size: 1.5rem;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .restaurant-container {
@@ -187,6 +189,23 @@ body {
   font-weight: 500;
   font-size: 16px;
   padding-bottom: 5px;
+}
+
+.filter {
+  align-self: flex-start; /* This overrides .body's centering */
+  margin-bottom: 10px;
+  margin-left: 130px;
+}
+
+
+.filter-btn{
+  padding: 10px;
+  align-items:start;
+  margin:5px;
+}
+
+.filter-btn:hover {
+  background-color: #e69500;
 }
 
 /* Footer CSS */
